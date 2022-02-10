@@ -7,6 +7,7 @@
   </head>
   <body>
     <div class="container">
+      <div id="msg"></div>
       <h1>Pre-paid Parking Form</h1>
       <form id="parking-form">
         <div class="input-field" id="name-field">
@@ -16,18 +17,18 @@
         <div class="input-field" id="car-field">
           <label for="car-year">Car</label>
           <div class="input-group">
-            <input id="car-year" type="number" min="1900" placeholder="Year" required>
+            <input id="car-year" type="number" min="1900" max="" placeholder="Year" required>
             <input id="car-make" type="text" placeholder="Make" required>
             <input id="car-model" type="text" placeholder="Model" required>
           </div>
         </div>
         <div class="input-field" id="start-date-field">
           <label for="start-date">Date parking</label>
-          <input id="start-date" type="date" required>
+          <input id="start-date" type="date" min="" value="" required>
         </div>
         <div class="input-field" id="days-field">
           <label for="days">Number of days</label>
-          <input id="days" type="number" min="1" max="30" required>
+          <input id="days" type="number" min="1" max="30" placeholder="1 - 30" required>
         </div>
         <div class="input-field" id="credit-card-field">
           <label for="credit-card">Credit Card</label>
